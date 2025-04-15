@@ -4,7 +4,6 @@ const User = require('./models/User');
 const cors = require('cors');
 
 const app = express();
-const port = 3000;
 
 const MONGO_URI = 'mongodb://127.0.0.1:27017/users_db';
 const PORT = 3000;
@@ -75,5 +74,5 @@ app.delete('/users/:id', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:port`);
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
